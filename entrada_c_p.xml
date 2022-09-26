@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<listadoInicial>
+    <!--Puede venir muchas más configuraciones -->
+    <configInicial id="$codigoConfiguracion" idEmpresa="$codEmpresa" idPunto="$codPunto">
+        <escritoriosActivos>
+            <!--Puede venir muchos escritorios activos -->
+            <escritorio idEscritorio="$codEscritorio"/>
+            <escritorio idEscritorio="$codEscritorio"/>
+            <!--Puede venir muchos escritorios activos -->
+        </escritoriosActivos>
+        <listadoClientes>
+            <!--Puede venir muchos clientes -->
+            <cliente dpi="$DPI">
+                <nombre> $nombreCliente </nombre>
+                <listadoTransacciones>
+                    <!--Puede venir muchas transacciones -->
+                    <transaccion idTransaccion="$codTrans" cantidad="cantTrans"/>
+                    <transaccion idTransaccion="$codTrans" cantidad="cantTrans"/> 
+                    <!--Puede venir muchas transacciones -->
+                </listadoTransacciones>
+            </cliente>
+            <!--Puede venir muchos clientes -->
+        </listadoClientes>
+    </configInicial>
+    <!--Puede venir muchas más configuraciones -->
+</listadoInicial>

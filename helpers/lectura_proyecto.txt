@@ -1,0 +1,37 @@
+Simular le proceso de un servidor 
+Puntos
+Empresa
+-> Hacer una pila 
+    -> Esta pila se rije cuando le da en activar o desactivar para que se ejecute la pila
+
+-> Mostrar el estado de cada "Escritorio de servicio" en cada "Punto de atencion"
+    - Tiempo de espera promedio
+    - El tiempo minimo de espera
+    - El tiempo máximo de espera
+    - El tiempo promedio de atención
+    - El tiempo maximo de atención
+    - El tiempo minimo de atención 
+
+-> Archivos de entrada XML
+    1. Para configurar el Sistema de atencion al cliente
+        - Debe permiter ingresar más archivos de empresas
+
+    2. Para configurar el estado inicial de la prueba al sistema de atención al cliente
+        - Se van agregando listado de clientes de un respectivo punto
+
+-> Operaciones
+    1. Configuración de la empresa
+        - Limpiar sistema
+        - Cargar archivos de configuración 
+        - Crear una empresa
+            - Crear puntos de atención
+                - Crear escritorios de servicio
+            - Crear transacciones para empresas 
+        - Subir varios archivos de configuración 
+
+    2. Selección de empresa y punto de atención 
+        - Mostrar la info de la lista
+
+    3. Manejo de puntos de atención (calculos)
+        - Cada vez que se active o desactive un escritorio, recalcular nuevamente los valores
+        - Atender al cliente avanza la cola y toma al cliente disponible, recalcular nuevamente los valores 

@@ -1,0 +1,33 @@
+INICIO DE PROYECTO
+
+1. Creación del menu inicial 
+    1. Configuración de empresa
+    2. Seleccionar una empresa
+    3. Manejo de puntos de atención 
+    4. Salir 
+
+2. Menu de "Configuración de empresa"
+    1. Limpiar el sistema
+    2. Cargar archivo de Configuración
+    3. Crear una nueva empresa
+    4. Cargar archivo de Configuración inicial para la prueba
+    5. Regresar
+
+2.1. Submenu de "Cargar archivo de configuración"
+    1. ingresar dirección del archivo 
+        - preguntar cargar archivo
+        - Mostrar que se ha cargado
+        - Limpiar y volver a cargar si desea
+    2. Regresar
+
+2.2. Submenu de "Crear una nueva empresa"
+    1. Crear punto de atención para empresas 
+        - Crear escritorios
+    2. Crear transacciones para empresas
+
+2.3. Submenu de "Cargar archivo de configuración inical para la prueba"
+    1. ingresar dirección del archivo 
+        - preguntar cargar archivo
+        - Mostrar que se ha cargado
+        - Limpiar y volver a cargar si desea
+    2. Regresar
