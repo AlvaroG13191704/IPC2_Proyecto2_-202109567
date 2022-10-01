@@ -2,13 +2,16 @@
 import os
 
 from f_menu.f_menu import first_menu
+from s_menu.s_menu import second_menu
+from tdas.linkedList import LinkedList
 
 
 # Class menu
 class Main_Menu:
     # constructor
     def __init__(self) -> None:
-        pass
+        self.companies = LinkedList()
+        self.init_states = LinkedList()
 
     def init_menu(self):
         option = 0
@@ -28,9 +31,22 @@ class Main_Menu:
                 os.system('cls')
                 menu_1 = first_menu() # call the first menu
                 menu_1.init_menu()
+                a , b = menu_1.get_attibutes()
+                if a.size == 0 or b.size == 0:                        
+                    for i in range(a.size):
+                        company = a.get_node(i)
+                        self.companies.append(company)
+                    
+                    for i in range(b.size):
+                        init = a.get_node(i)
+                        self.init_states.append(init)
+                
             elif option == 2:
                 os.system('cls')
-                print('Opción 2')
+                menu_2 = second_menu(self.companies)
+                menu_2.init_menu()
+                selected = menu_2.get_selected()
+                
             elif option == 3:
                 os.system('cls')
                 print('Opción 3')
@@ -43,6 +59,6 @@ class Main_Menu:
 
 
 # start our app
-if __name__=="__main__":
-    menu=Main_Menu()
+if __name__ == "__main__":
+    menu = Main_Menu()
     menu.init_menu()
