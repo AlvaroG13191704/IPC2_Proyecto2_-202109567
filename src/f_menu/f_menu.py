@@ -12,7 +12,7 @@ from tdas.linkedList import LinkedList
 class first_menu:
     def __init__(self) -> None:
         self.linkedList_company = LinkedList()
-        self.init_states_linkedList = LinkedList()
+        self.init_state = None
 
     def init_menu(self):
         option = 0
@@ -54,13 +54,13 @@ class first_menu:
                 os.system('cls')
 
     def get_attibutes(self):
-        return self.linkedList_company, self.init_states_linkedList
+        return self.linkedList_company, self.init_state
         
     # fun to clean the data
     def clean_data(self):
         void = LinkedList()
         self.linkedList_company = void
-        self.init_states_linkedList = void
+        self.init_state = None
     
     # uploadFile of company config
     def company_config_file(self):
@@ -146,7 +146,7 @@ class first_menu:
         init_state=company_init_xml(route)
         for i in range(init_state.size):
             init_single_state = init_state.get_node(i)
-            self.init_states.append(init_single_state)
+            self.init_state = init_single_state
         os.system('cls')
 
 

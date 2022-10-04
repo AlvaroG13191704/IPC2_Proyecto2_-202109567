@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<listadoInicial>
+    <!--Puede venir muchas más configuraciones -->
+    <configInicial id="1" idEmpresa="1" idPunto="1">
+        <escritoriosActivos>
+            <!--Puede venir muchos escritorios activos -->
+            <escritorio idEscritorio="1"/>
+            <escritorio idEscritorio="2"/>
+            <!--Puede venir muchos escritorios activos -->
+        </escritoriosActivos>
+        <listadoClientes>
+            <!--Puede venir muchos clientes -->
+            <cliente dpi="3233923923329">
+                <nombre> Alvaro García</nombre>
+                <listadoTransacciones>
+                    <!--Puede venir muchas transacciones -->
+                    <transaccion idTransaccion="1" cantidad="1"/>
+                    <transaccion idTransaccion="1" cantidad="1"/> 
+                    <!--Puede venir muchas transacciones -->
+                </listadoTransacciones>
+            </cliente>
+            <!--Puede venir muchos clientes -->
+            <!--Puede venir muchos clientes -->
+            <cliente dpi="32323232">
+                <nombre> Julissa Reyes</nombre>
+                <listadoTransacciones>
+                    <!--Puede venir muchas transacciones -->
+                    <transaccion idTransaccion="1" cantidad="1"/>
+                    <transaccion idTransaccion="1" cantidad="1"/> 
+                    <!--Puede venir muchas transacciones -->
+                </listadoTransacciones>
+            </cliente>
+            <!--Puede venir muchos clientes -->
+            <!--Puede venir muchos clientes -->
+            <cliente dpi="12323432132">
+                <nombre> Kevin García</nombre>
+                <listadoTransacciones>
+                    <!--Puede venir muchas transacciones -->
+                    <transaccion idTransaccion="1" cantidad="1"/>
+                    <transaccion idTransaccion="1" cantidad="1"/> 
+                    <!--Puede venir muchas transacciones -->
+                </listadoTransacciones>
+            </cliente>
+            <!--Puede venir muchos clientes -->
+        </listadoClientes>
+    </configInicial>
+    <!--Puede venir muchas más configuraciones -->
+</listadoInicial>

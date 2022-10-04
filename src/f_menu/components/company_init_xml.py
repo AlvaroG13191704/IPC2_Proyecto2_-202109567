@@ -58,6 +58,5 @@ def company_init_xml(content):
             # add a init state
             init = initial_state_class(id_config,id_company,id_point,active_desk_linked,client_linkedList)
             init_state.append(init)
-    
     # RETURN
     return init_state

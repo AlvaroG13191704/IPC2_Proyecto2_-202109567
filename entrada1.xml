@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<listaEmpresas>
+    <!-- Pueden haber más empresas -->
+    <empresa id="1">
+        <nombre> Claro Guateamala </nombre>
+        <abreviatura> Claro </abreviatura>
+        <listaPuntosAtencion>
+        <!-- Pueden haber más puntos de atencion -->
+            <puntoAtencion id="1">
+                <nombre> Centro Claro </nombre>
+                <direccion> Okland Mall 3er Nivel </direccion>
+                <listaEscritorios>
+                    <!-- Pueden haber más escritorios -->
+                    <escritorio id="1">
+                        <identificacion> #e1 </identificacion>
+                        <encargado> Empleado Jorge </encargado>
+                    </escritorio>
+                    <!-- Pueden haber más escritorios -->
+                    <!-- Pueden haber más escritorios -->
+                    <escritorio id="2">
+                        <identificacion> #e2 </identificacion>
+                        <encargado> Empleado Mauricio </encargado>
+                    </escritorio>
+                    <!-- Pueden haber más escritorios -->
+                    <!-- Pueden haber más escritorios -->
+                    <escritorio id="3">
+                        <identificacion> #e3 </identificacion>
+                        <encargado> Empleado Paulo </encargado>
+                    </escritorio>
+                    <!-- Pueden haber más escritorios -->                      
+                </listaEscritorios>
+            </puntoAtencion>
+        <!-- Pueden haber más puntos de atencion -->
+        </listaPuntosAtencion>
+
+        <listaTransacciones>
+            <!-- Pueden haber más transacciones -->
+            <transaccion id="1">
+                <nombre> Pago servicios </nombre>
+                <tiempoAtencion> 2 </tiempoAtencion>
+            </transaccion>
+            <!-- Pueden haber más transacciones -->
+        </listaTransacciones>
+    </empresa>
+    <!-- Pueden haber más empresas -->
+</listaEmpresas>
