@@ -39,7 +39,7 @@ class Main_Menu:
                         company = a.get_node(i)
                         self.companies.append(company)
                 self.init_state = b
-                
+
             elif option == 2:
                 os.system('cls')
                 menu_2 = second_menu(self.companies)
@@ -49,7 +49,7 @@ class Main_Menu:
             elif option == 3:
                 os.system('cls')
                 menu_3 = third_menu(self.companies,self.init_state)
-                menu_3.prepare_all()
+                #menu_3.prepare_all()
                 menu_3.ini_menu()
             elif option == 4:
                 os.system('cls')

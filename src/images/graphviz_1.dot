@@ -1,0 +1,50 @@
+
+graph  grafi{
+    rankdir=TB;
+    labelloc="t";
+    
+    label="Empresa:  Banco de Desarrollo Rural ";
+        
+    node[
+        shape="circle"
+        fixedsize=true
+        width=1.3
+        height=1
+    ];
+    subgraph cluster_attention_point {
+        node [style=filled shape="circle"];
+        style="filled";
+        color="chocolate1";
+        
+        label="Punto de atención:  Banrural Villa Nueva ";
+        
+        subgraph cluster_1
+                {
+        node [style=filled shape="circle"];
+        style="filled";
+        color="honeydew";
+        label="Escritorio 1";
+        E_0[label=" Arturito "];        
+                }
+        subgraph cluster_2
+                {
+        node [style=filled shape="circle"];
+        style="filled";
+        color="honeydew";
+        label="Escritorio 2";
+        E_1[label=" Bill Gates "];        
+                }
+        subgraph cluster_row {
+        node [style=filled shape="circle"];
+        style="filled";
+        color="gray";
+        label="En espera";        
+        C_2933151163333[label=" Dante "]
+C_2933151164444[label=" Freddie Mercuri "]
+C_29331511655555[label=" Henry Ford "]
+
+            }
+            
+    }
+}
+        

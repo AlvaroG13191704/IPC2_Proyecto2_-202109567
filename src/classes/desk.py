@@ -8,6 +8,8 @@ class desk_class:
         self.manager = manager
         self.active = False
         self.client = None
+        self.times = []
+        self.clients_done = 0
 
     
     def print_desk(self):
@@ -16,7 +18,7 @@ class desk_class:
     | Escritorio -> {self.identification} 
     | Encargado -> {self.manager}         
     | Atendiendo a -> {self.client}     
-    |{" Activo" if self.active else "Desactivado" }   
+    |{" Activo" if self.active else " Desactivado" }   
     |_____________________________________
     
         '''

@@ -42,20 +42,25 @@ class LinkedList:
 
     # get last node -> LIFO
     def get_last(self):
-        aux = self.head
-        current = None
-        while aux.next is not None:
-            aux = aux.next
-            current = aux
-        aux = None
+        current = self.head
+        next = current.next
+        while next is not None:
+            current = next
+            next = current.next
         return current.value
 
+    def print(self):
+        current = self.head
+        while current:
+            print(current.value)
+            current = current.next
     # print
     def print_client_value(self):
         current = self.head
         while current:
             print(current.value.print_client())
             current = current.next
+
     def print_client_name(self):
         current = self.head
         clients = ''
@@ -63,7 +68,6 @@ class LinkedList:
             clients += f'C_{current.value.dpi}[label="{current.value.name}"]\n'
             current = current.next
         return clients
-
 # if __name__ == '__main__':
 #     listaBanco = LinkedList()
 #     listaBanco.print()
@@ -71,13 +75,7 @@ class LinkedList:
 #     listaBanco.append('Kevin')
 #     listaBanco.append('Samuel')
 #     listaBanco.print()
-#     client = listaBanco.get_first() # get "Alvaro" and get off
-#     print(f'\nCliente siendo atendido -> {client}\n')
+#     last = listaBanco.get_last()
+#     print(f'Se ha sacado al ultimo que entro -> {last}')
+
 #     listaBanco.print()
-#     client = listaBanco.get_first() # get "Alvaro" and get off
-#     print(f'\nCliente siendo atendido -> {client}\n')
-#     listaBanco.print()
-#     client = listaBanco.get_first() # get "Alvaro" and get off
-#     print(f'\nCliente siendo atendido -> {client}\n')
-#     listaBanco.print()
-#     print(listaBanco.size)
